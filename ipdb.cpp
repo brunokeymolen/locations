@@ -66,8 +66,8 @@ namespace keymolen {
 
 			//Process the line
 			IPDBRecord* r = new IPDBRecord();
-			r->lon = atol(parseString(line.c_str(), 7).c_str());
-			r->lat = atol(parseString(line.c_str(), 8).c_str());
+			r->lon = atof(parseString(line.c_str(), 7).c_str());
+			r->lat = atof(parseString(line.c_str(), 8).c_str());
 			_db[atoi(parseString(line.c_str(), 1).c_str())] = r;
 		}
 		db_file.close();

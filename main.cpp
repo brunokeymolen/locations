@@ -39,6 +39,7 @@
 #include <iostream>
 #include <string.h>
 #include <cmath>
+#include <unistd.h>
 
 #include <fcgiapp.h>
 #include "ipdb.h"
@@ -158,9 +159,9 @@ void doCGI() {
 			continue;
 		}
 
-		const char* method = FCGX_GetParam("REQUEST_METHOD", request->envp);
-		const char* path_info = FCGX_GetParam("PATH_INFO", request->envp);
-		const char* cl = FCGX_GetParam("CONTENT_LENGTH", request->envp);
+		//const char* method = FCGX_GetParam("REQUEST_METHOD", request->envp);
+		//const char* path_info = FCGX_GetParam("PATH_INFO", request->envp);
+		//const char* cl = FCGX_GetParam("CONTENT_LENGTH", request->envp);
 		const char* req_full = FCGX_GetParam("QUERY_STRING", request->envp);
 		const char* remoteip = FCGX_GetParam("REMOTE_ADDR", request->envp);
 
