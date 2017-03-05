@@ -11,4 +11,4 @@ Project description: http://www.keymolen.com/2013_04_01_archive.html
 
 This project is using IP2Location LITE which is available free from http://lite.ip2location.com
 
-bruno.keymolen@gmail.com
+(C)Bruno Keymolen, bruno.keymolen@gmail.com
